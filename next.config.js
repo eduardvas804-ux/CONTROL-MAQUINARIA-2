@@ -2,7 +2,16 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        domains: ['mflvnjdchngasiaafqld.supabase.co', 'lh3.googleusercontent.com'],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'mflvnjdchngasiaafqld.supabase.co',
+            },
+            {
+                protocol: 'https',
+                hostname: 'lh3.googleusercontent.com',
+            },
+        ],
     },
 }
 
