@@ -39,7 +39,7 @@ export default function NuevoEquipoPage() {
         handleSubmit,
         formState: { errors },
     } = useForm<EquipoFormData>({
-        resolver: zodResolver(equipoSchema),
+        resolver: zodResolver(equipoSchema) as any,
         defaultValues: {
             horometro_actual: 0,
             tarifa_hora_default: 0,
